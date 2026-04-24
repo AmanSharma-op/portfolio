@@ -1,0 +1,96 @@
+
+
+
+<!-- ================= style.css ================= -->
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #020617;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.home {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #6366f1;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.skill .bar {
+  background: #1e293b;
+  height: 8px;
+  margin-bottom: 10px;
+}
+
+.skill .bar div {
+  height: 100%;
+  background: #6366f1;
+}
+
+.project-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(max-width:768px) {
+  .nav-links {display:none; flex-direction:column;}
+  .menu-toggle {display:block;}
+  .project-container {flex-direction:column;}
+}
+</style>
+
+
